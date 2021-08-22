@@ -69,7 +69,7 @@ h1,h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 32pt;
     color: #03e9f4;
-    padding: 0 5px;
+    padding: 0 20px;
 }
 a, a:visited{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,10 +77,39 @@ a, a:visited{
     text-decoration: none;
 }
 
+/*Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo_img{
+    display: block;
+    background-image: url(../img/V.svg);
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.logo_text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48pt;
+    font-weight: bolder;
+    color: #03e9f4;
+}
+
 /* Highlighting links */
 .linking{
     position: relative;
-    margin: 0;
+    margin: 10px;
     padding: 0 5px;
     color: #03e9f4;
 }
@@ -109,7 +138,7 @@ a, a:visited{
     height: 100%;
     background: #14f8e7;
     z-index: -2;
-    opacity: .5;
+    opacity: .4;
     filter: blur(40px);
     transition-duration: 0.5s;
 }
