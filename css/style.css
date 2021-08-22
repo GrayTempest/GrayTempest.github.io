@@ -40,6 +40,7 @@
 body{
     background-color: #212126;
     margin: 0;
+    padding: 0;
 }
 
 /* GIF */
@@ -155,12 +156,12 @@ h1,h2{
 
 /* Footer */
 .footer{
-    position: relative;
-    top: 70vh;
-    /* position: absolute;
-    top: 100%;
+    /* position: relative;
+    top: 70vh; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 205px; */
+    height: 205px;
 }
 
 .bg_gray{
@@ -227,4 +228,12 @@ h1,h2{
 .social_instagram{
     background-image: url(../img/instagram-brands.svg);
     background-size: 60%;
+}
+/*Fix for mobiles */
+#container{
+    position: relative;
+    min-height: 100%;
+}
+#body{
+   padding-bottom: 205px; 
 }
