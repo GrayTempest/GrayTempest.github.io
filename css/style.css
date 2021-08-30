@@ -237,3 +237,11 @@ h1,h2{
 #body{
    padding-bottom: 170px; 
 }
+/*Before change timetable highlight */
+.bfchange{
+    background-color: #128891;
+    color: #050801;
+    /* background-image: linear-gradient(to bottom right, #4db334, #2fdc04, #4db334); */
+    /* background-image: linear-gradient(to bottom right, #78b9bb, #6dd8db, #78b9bb); */
+    background-image: linear-gradient(to bottom right, #128891, #00f7ff, #128891);
+}
