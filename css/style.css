@@ -24,6 +24,9 @@
     border-bottom: 1px solid #dddddd;
     color: #03e9f4;
 }
+.content-table tbody tr:first-of-type{
+    border-top: 1px solid #dddddd;
+}
 .content-table tbody tr:nth-child(even){
    /* background-color: #f3f3f3; */
    background-color: #18191b;
@@ -237,8 +240,8 @@ h1,h2{
 #body{
    padding-bottom: 170px; 
 }
-/*Before change timetable highlight */
-.bfchange{
+/*After change timetable highlight */
+.afchange{
     background-color: #128891;
     color: #050801;
     /* background-image: linear-gradient(to bottom right, #4db334, #2fdc04, #4db334); */
