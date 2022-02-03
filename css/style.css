@@ -262,7 +262,7 @@ h1,h2{
 }
 
 #slider{ /*Центровка*/
-    margin: 0 10px 20px 100px;
+    margin: 0 10px 20px 0;
 }
 
 #slider article{
@@ -299,7 +299,7 @@ article table{
     background: url(../img/prev.svg) no-repeat;
     color: lightblue;
     float: left;
-    margin: 25% 0 0 -90px;
+    margin: 25% 0 0 0;
     display: block;
     height: 68px;
     width: 68px;
@@ -312,7 +312,7 @@ article table{
 #switch5:checked ~ #controls label:nth-child(1){
     background: url(../img/next.svg) no-repeat;
     float: right;
-    margin: 25% -90px 0 0;
+    margin: 25% 0 0 0;
     display: block;
     height: 68px;
     width: 68px;
