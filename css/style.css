@@ -166,10 +166,10 @@ h1,h2{
 .footer{
     /* position: relative;
     top: 70vh; */
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 205px;
+    height: 200px;
 }
 
 .bg_gray{
@@ -200,7 +200,7 @@ h1,h2{
     display: flex;
     justify-content: space-between;
     color: #828282;
-    padding: 25px 0;
+    padding: 20px 0 10px 0;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -243,7 +243,7 @@ h1,h2{
     min-height: 100%;
 }
 #body{
-   padding-bottom: 170px; 
+   padding-bottom: 300px; 
 }
 /*After change timetable highlight */
 .afchange{
@@ -385,4 +385,10 @@ label, a{
 
 #conrols label{
     transition: opacity 0.2s ease-out;
+}
+
+/*Fixes for logo link*/
+.logo{
+    text-decoration: none;
+    cursor: default;
 }
