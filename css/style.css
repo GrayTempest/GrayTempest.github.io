@@ -266,12 +266,12 @@ h1,h2{
 }
 
 #slider article{
-    width: 20%;
+    width: 16.6667%; /* 100%/6 = 16.6667% */
     float: left;
 }
 
 #slides .table{
-    width: 500%;
+    width: 600%; /* 6 (600%) */
     /* line-height: 0; */
 }
 
@@ -291,11 +291,12 @@ article table{
 }
 
 /*Настройка переключений*/
-#switch1:checked ~ #controls label:nth-child(5),
+#switch1:checked ~ #controls label:nth-child(6),
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
+#switch5:checked ~ #controls label:nth-child(4),
+#switch6:checked ~ #controls label:nth-child(5){
     background: url(../img/prev.svg) no-repeat;
     float: left;
     margin: 25% 0 0 0;
@@ -308,7 +309,8 @@ article table{
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(1){
+#switch5:checked ~ #controls label:nth-child(6),
+#switch6:checked ~ #controls label:nth-child(1){
     background: url(../img/next.svg) no-repeat;
     float: right;
     margin: 25% 0 0 0;
@@ -340,6 +342,9 @@ label, a{
 #switch5:checked ~ #slides .content-table{
     margin-left: -400%;
 }
+#switch6:checked ~ #slides .content-table{
+    margin-left: -500%;
+}
 
 #controls{
     margin: -25% 0 0 0;
@@ -369,14 +374,15 @@ label, a{
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
+#switch5:checked ~ #active label:nth-child(5),
+#switch6:checked ~ #active label:nth-child(6){
     background: #03e9f4;
     background-color: #03e9f4 !important;
 }
 
 /*Анимация*/
 #slides table{
-    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1); /*(0.77, 0, 0.175, 1)*/
 }
 
 #controls label:hover{
